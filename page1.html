@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.navbar{
+    background-color:white;
+    width: 100%;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    color:rgb(8, 8, 8);
+    float: right;
+    list-style: none;
+    font-size: large;
+    padding: 10px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+
+.row {
+ display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+.card {
+  
+  padding:10px;
+  width: auto;
+  text-align: left;
+  margin-left: 15px;
+  justify-content:space-between;
+  float: right;
+  color: antiquewhite;
+  background-color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.footer-clean {
+  padding-top: 10px;
+  padding-left: auto;
+  padding-right: auto;
+  background-color:rgb(10, 0, 0);
+  color:#f2f5f8;
+
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+
+.site-footer__legal-info {
+   
+   
+    border-top: 1px solid rgb(224, 215, 215);
+    display:block;
+    text-align: center;
+    background-color: black;
+    color:ivory;
+    font-size: 12px;
+}
+h1{
+    color: black;
+    font-family:sans-serif;
+    /*font-size: larger;*/
+    text-align: center;
+}
+.para{
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: cursive;
+}
+.image {
+  
+    transition: transform .2s;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+}
+.container{
+ margin-left:  auto;
+  margin-right: auto;
+}
+
+.logo{
+  position:absolute;
+  height:auto;
+  width:50px;
+  left:10px;
+  top: auto;
+}
+.icon{
+  background-color: antiquewhite;
+  color: antiquewhite;
+}
+
+</style>
+<body>
+
+<!-- Header -->
+<header>
+  
+    <nav class="navbar">
+      <img src="./images/logo.jpg" class="logo image">
+     
+        <ul>
+            <li>Home </li>            
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact us</li>   
+        </ul>
+
+    </nav>
+   
+</header>
+
+<div class="container">
+  <h1>Welcome to the Project Page</h1>
+<div class="para">
+    <p>This is a website deveoped to understand the basics of HTML and CSS<br>
+        
+    </p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="col-xs-7 col-sm-6 col-lg-8 column">
+    <img src="./images/images1.jpg" style="width:100%" class="image">
+    <img src="./images/images2.jpg" style="width:100%" class="image">
+    <img src="./images/images3.jpg" style="width:100%" class="image">
+    <img src="./images/images4.jpg" style="width:100%" class="image">
+    <img src="./images/images5.jpg" style="width:100%" class="image">
+  </div>
+  <div class="col-xs-7 col-sm-6 col-lg-8 column">
+    <img src="./images/images7.jpg" style="width:100%" class="image">
+    <img src="./images/images6.jpg" style="width:100%" class="image">
+    <img src="./images/images8.jpg" style="width:100%" class="image">
+    <img src="./images/images9.jpg" style="width:100%" class="image">
+    <img src="./images/images10.jpg" style="width:100%" class="image">
+   
+  </div>  
+  <div class="col-xs-7 col-sm-6 col-lg-8 column">
+    <img src="./images/images1.jpg" style="width:100%" class="image">
+    <img src="./images/images2.jpg" style="width:100%" class="image">
+    <img src="./images/images3.jpg" style="width:100%" class="image">
+    <img src="./images/images4.jpg" style="width:100%" class="image">
+    <img src="./images/images5.jpg" style="width:100%" class="image">
+  </div>
+  <div class="col-xs-7 col-sm-6 col-lg-8 column">
+    <img src="./images/images7.jpg" style="width:100%" class="image">
+    <img src="./images/images6.jpg" style="width:100%" class="image">
+    <img src="./images/images8.jpg" style="width:100%" class="image">
+    <img src="./images/images9.jpg" style="width:100%" class="image">
+    <img src="./images/images10.jpg" style="width:100%" class="image">
+  </div>
+</div>
+</div>
+<div class="footer-clean">
+  <footer>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">Web design</a></li>
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Hosting</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Company</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Legacy</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                  <h3>Careers</h3>
+                  <ul>
+                      <li><a href="#">Job openings</a></li>
+                      <li><a href="#">Employee success</a></li>
+                      <li><a href="#">Benefits</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                <p class="copyright">Kreeti Technologies © 2018</p>
+            </div>
+          </div>
+      </div>
+  </footer>
+</div>
+<section class="site-footer__legal-info">
+    <span>Copyright © 2022 Kreeti Technologies Pvt. Ltd. All rights reserved.</span>
+    <span class="site-footer__legal-info__duns">D-U-N-S Number: 874094070</span>
+    <a class="site-footer__legal-info__policy" href="/privacy-policy">Privacy Policy</a>
+  </section>
+</body>
+</html>
